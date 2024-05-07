@@ -10,9 +10,11 @@ type kebabTest struct {
 
 func TestToKebabCase(t *testing.T) {
 	items := []kebabTest{
-		{"What is programming?", "what-is-programming?"},
 		{"already-in-kebab-case", "already-in-kebab-case"},
-		{"Can make a URL", "can-make-a-url"},
+		{"What is programming?", "what-is-programming?"},
+		{"ALL UPPER CASE", "all-upper-case"},
+		{"This include7s 69", "this-include7s-69"},
+		{"$peci@l ch@r@cter$", "$peci@l-ch@r@cter$"},
 	}
 
 	for _, it := range items {
